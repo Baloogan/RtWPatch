@@ -6,4 +6,5 @@ desktop.ini
 /packages/
 !packages/repositories.config
 *.sdf
+*.pfx
 *.opensdf
