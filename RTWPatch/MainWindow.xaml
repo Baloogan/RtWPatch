@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RTWPatch"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Loaded="Window_Loaded"
+        ResizeMode="NoResize"
+        Title="Baloogan Campaign RTW Patcher v1.00" Height="350" Width="407">
     <Grid>
-        
+        <TextBox x:Name="textBox_binary_location" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" IsReadOnly="True" TextWrapping="Wrap" Text="C:\NWS\Rule the Waves\RTW.exe" VerticalAlignment="Top" Width="380"/>
+        <ListBox x:Name="listBox_patches" HorizontalAlignment="Left" Height="252" Margin="10,38,0,0" VerticalAlignment="Top" Width="380" ItemsSource="{Binding}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ListBoxItem>
+                        <TextBlock Text="{Binding Name}"/>
+                    </ListBoxItem>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="button_apply_selected_patch" Content="Apply Selected Patch" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="112" Click="button_apply_selected_patch_Click"/>
+        <Button x:Name="button_apply_all_patches" Content="Apply All Patches" HorizontalAlignment="Left" Margin="278,295,0,0" VerticalAlignment="Top" Width="112" Click="button_apply_all_patches_Click"/>
     </Grid>
 </Window>
