@@ -50,7 +50,7 @@ namespace RTWPatch
 
             List<IPatch> patches = new List<IPatch>();
             patches.Add(new Patch_NoEndDate());
-            patches.Add(new Patch_NoTonnageLimit());
+            //patches.Add(new Patch_NoTonnageLimit()); //doesn't work yet.
             listBox_patches.DataContext = patches;
         }
 

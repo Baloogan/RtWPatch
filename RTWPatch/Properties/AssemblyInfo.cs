@@ -8,9 +8,9 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RTWPatch")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A patcher for Rule the Waves v1.00")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Baloogan Campaign")]
 [assembly: AssemblyProduct("RTWPatch")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
