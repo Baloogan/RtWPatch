@@ -30,11 +30,11 @@ namespace RTWPatch
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("Welcome to RTWPatch by Baloogan. Back up your goddamn RTW directory before pressing OK. Seriously. Do it now.");
+            //MessageBox.Show("Welcome to RTWPatch by Baloogan. Back up your goddamn RTW directory before pressing OK. Seriously. Do it now. Also close RTW.");
 
-            string file_location = @"C:\NWS\Rule the Waves\RTW.exe";
+            filename = @"C:\NWS\Rule the Waves\RTW.exe";
 
-            while (!File.Exists(file_location))
+            while (!File.Exists(filename))
             {
                 Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
                 dlg.Title = "Select RTW.exe";
