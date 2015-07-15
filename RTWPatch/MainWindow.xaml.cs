@@ -30,7 +30,7 @@ namespace RTWPatch
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("Welcome to RTWPatch by Baloogan. Back up your goddamn RTW directory before pressing OK. Seriously. Do it now. Also close RTW.");
+            MessageBox.Show("Please back up your RTW directory before pressing OK. This program does NOT back up any of your files for you. Also close RTW.");
 
             filename = @"C:\NWS\Rule the Waves\RTW.exe";
 
@@ -58,7 +58,7 @@ namespace RTWPatch
         {
             if (listBox_patches.SelectedItem == null)
             {
-                MessageBox.Show("Select an item in the list above.");
+                MessageBox.Show("Select an item from the list above.");
                 return;
             }
             IPatch patch = (IPatch)listBox_patches.SelectedItem;

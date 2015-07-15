@@ -7,15 +7,13 @@
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         ResizeMode="NoResize"
-        Title="Baloogan Campaign RTW Patcher v1.00" Height="350" Width="407">
+        Title="Baloogan Campaign RTW Patcher v1.00" Height="350" Width="407" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
     <Grid>
         <TextBox x:Name="textBox_binary_location" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" IsReadOnly="True" TextWrapping="Wrap" Text="C:\NWS\Rule the Waves\RTW.exe" VerticalAlignment="Top" Width="380"/>
         <ListBox x:Name="listBox_patches" HorizontalAlignment="Left" Height="252" Margin="10,38,0,0" VerticalAlignment="Top" Width="380" ItemsSource="{Binding}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <ListBoxItem>
-                        <TextBlock Text="{Binding Name}"/>
-                    </ListBoxItem>
+                    <TextBlock Text="{Binding Name}" FontSize="20"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
